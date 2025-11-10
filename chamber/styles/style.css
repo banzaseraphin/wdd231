@@ -1,0 +1,45 @@
+:root{
+    --primary-color: #2E86AB;
+    --secondary-color: #F4D35E;
+    --Background-color: #F0F0F0;
+    --Text-color: #333333;
+    --Font-family: Poppins, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Background-color);
+    padding: 10px 40px;
+}
+.logo{
+    margin-right: 15px;
+}
+header h1{
+    font-size: 20px;
+    color: var(--Text-color);
+    display: block;
+    margin-right: 350px;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    margin-right: 190px;
+    padding: 0;
+}
+nav ul li a{
+    border: solid var(--secondary-color);
+    margin: 0;
+    
+}
+
