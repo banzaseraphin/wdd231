@@ -15,11 +15,9 @@
     list-style: none;
 }
 
-/* ---------- BODY ---------- */
 body {
     font-family: var(--font-family);
     color: var(--text-color);
-    -webkit-text-size-adjust: 100%; /* Prevent mobile browsers from resizing text */
 }
 
 /* Reset some default spacing */
@@ -64,7 +62,7 @@ body {
   color: #e6b800;
 }
 
-/* ---------- MEMBERS DIRECTORY ---------- */
+/*------------         --------------*/
 .members-directory {
   padding: 20px;
 }
@@ -104,6 +102,9 @@ body {
   font-size: 14px;
   color: #333;
 }
+
+
+
 
 /* ---------- MAIN HEADER ---------- */
 .main-header {
@@ -183,6 +184,7 @@ body {
   color: #e6b800;
 }
 
+ 
 .footer-section li {
   margin-bottom: 8px;
   color: #ccc;
@@ -222,37 +224,7 @@ body {
   color: var(--primary-color);
 }
 
-/* ---------- VENDOR FIXES ---------- */
 
-/* Buttons and inputs appearance */
-button, input, select, textarea {
-  appearance: none;           /* Standard */
-  -webkit-appearance: none;   /* Chrome, Safari */
-  -moz-appearance: none;      /* Firefox */
-}
-
-/* Remove number input spinners */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield; /* Firefox */
-}
-
-/* Firefox focus styles */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-button:-moz-focusring,
-input:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
@@ -274,7 +246,10 @@ input:-moz-focusring {
     display: block;
     margin: 5px 0;
   }
+}
 
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
   .footer-top {
     flex-direction: column;
     gap: 20px;
