@@ -15,16 +15,12 @@
     list-style: none;
 }
 
-body {
-    font-family: var(--font-family);
-    color: var(--text-color);
-}
 
 /* Reset some default spacing */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
+  font-family: var(--font-family);
+  color: var(--text-color);
 }
 
 /* ---------- TOP BAR ---------- */
@@ -246,12 +242,11 @@ body {
     display: block;
     margin: 5px 0;
   }
-}
 
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 768px) {
   .footer-top {
     flex-direction: column;
     gap: 20px;
   }
+
 }
+
