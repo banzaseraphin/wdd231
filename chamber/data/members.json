@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Lubumbashi Electronics",
+    "address": "123 Main St, Lubumbashi",
+    "phone": "+243 991 123 456",
+    "website": "https://lubumbashielectronics.com",
+    "image": "electro.jpg",
+    "membership": 3,
+    "description": "Leading supplier of electronics and appliances in Lubumbashi."
+  },
+  {
+    "name": "Katanga Construction Co.",
+    "address": "45 Industrial Ave, Lubumbashi",
+    "phone": "+243 994 987 654",
+    "website": "https://katangaconstruction.com",
+    "image": "construct.png",
+    "membership": 2,
+    "description": "Specialized in commercial and residential building projects."
+  },
+  {
+    "name": "Diamond Coffee Roasters",
+    "address": "22 Coffee St, Lubumbashi",
+    "phone": "+243 995 321 876",
+    "website": "https://diamondcoffee.com",
+    "image": "coffee.jpg",
+    "membership": 1,
+    "description": "Premium coffee roasters with local and international distribution."
+  },
+  {
+    "name": "Lubumbashi Logistics",
+    "address": "77 Transport Rd, Lubumbashi",
+    "phone": "+243 996 543 210",
+    "website": "https://lubumbashilogistics.com",
+    "image": "logistic.png",
+    "membership": 3,
+    "description": "Reliable freight and shipping services across the region."
+  },
+  {
+    "name": "GreenTech Solutions",
+    "address": "56 Innovation Blvd, Lubumbashi",
+    "phone": "+243 997 111 222",
+    "website": "https://greentechlubumbashi.com",
+    "image": "green-tech.png",
+    "membership": 2,
+    "description": "Sustainable technology solutions for businesses."
+  },
+  {
+    "name": "Lubumbashi Fashion House",
+    "address": "88 Style Ave, Lubumbashi",
+    "phone": "+243 998 333 444",
+    "website": "https://fashionhouselub.com",
+    "image": "fashion.png",
+    "membership": 1,
+    "description": "High-end fashion and apparel retailer."
+  },
+  {
+    "name": "Diamond Mining Supplies",
+    "address": "12 Mining Lane, Lubumbashi",
+    "phone": "+243 999 555 666",
+    "website": "https://diamondminingsupplies.com",
+    "image": "mining-supplies.png",
+    "membership": 3,
+    "description": "Providing mining equipment and tools across Katanga."
+  }
+]

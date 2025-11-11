@@ -16,27 +16,88 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-        <img class="logo" src="./images/logo.svg" alt="Lubumbashi Chamber of Commerce Logo" width="150">
-        <h1>Lubumbashi Chamber of Commerce</h1>
-        <nav>
-            <ul>
-                <li><a href="#"> Home </a></li>
-                <li><a href="#"> About Us </a></li>
-                <li><a href="#"> Membership </a></li>
-                <li><a href="#"> Directory </a></li>
-                <li><a href="#"> Contact </a></li>
-            </ul>
-        </nav>
+    <div class="top-bar">
+        <div class="contact-info">
+          <span><i class="fa-solid fa-location-dot"></i> Address: Lubumbashi, Kasapa 1210</span>
+          <span><i class="fa-solid fa-envelope"></i> Email: info@ki-chamber.com</span>
+          <span><i class="fa-solid fa-phone"></i> Phone: + (243) 97 12 30 587</span>
+        </div>
+        <div class="social-icons">
+          <a href="./images/facebook1.svg"><i class="facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+  <!-- Main navigation -->
+    <header class="main-header">
+      <div class="logo">
+        <img src="images/logo.svg" alt="Chamber Nation Logo" width="100">
+        <div class="logo-text">
+          <h2>KI-CHAMBER</h2>
+          <p>Powerful Member Management & Growth</p>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Calendar</a>
+        <a href="#">Directory</a>
+        <a href="#">Membership</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <a href="#" class="login-btn">Account Login</a>
     </header>
+
     <main>
-        <section>
-            <img class="hiro" src="./images/">
+        <section class="members-directory">
+            <div class="view-toggle">
+                <button id="grid-view">Grid View</button>
+                <button id="list-view">List View</button>
+            </div>
+            <div id="members-container" class="grid-view"></div>
         </section>
+          
     </main>
    
-    <footer>
-        <p>&copy; 2025 Lubumbashi Chamber of Commerce</p>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>The Lubumbashi Chamber of Commerce website serves as a central hub for businesses <br>and entrepreneurs in Lubumbashi. We provide information on local events and workshops, <br>offer networking opportunities, maintain a directory of local businesses, and promote economic <br>growth and entrepreneurship, supporting a connected and thriving business community.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p><i class="fa-solid fa-location-dot"></i> Lubumbashi, Kasapa 1210</p>
+          <p><i class="fa-solid fa-envelope"></i> info@ki-chamber.com</p>
+          <p><i class="fa-solid fa-phone"></i> + (243) 97 12 30 587</p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p id="footer-info"></p>
+        <p>&copy; 2025 KI-CHAMBER. All rights reserved.</p>
+      </div>
     </footer>
+    <script src="./scripts/directory.js"></script>
+
 </body>
 </html>
+
