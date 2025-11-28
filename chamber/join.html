@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Banza Kiongo Seraphin">
+    <meta name="description" content="Join the Lubumbashi Chamber of Commerce and become a member.">
+
+    <meta property="og:title" content="Lubumbashi Chamber of Commerce - Join" />
+    <meta property="og:description" content="Become a member of the KI Chamber and grow your business." />
+    <meta property="og:image" content="https://banzaseraphin.github.io/wdd231/chamber/images/site-pic.png" />
+    <meta property="og:url" content="https://banzaseraphin.github.io/wdd231/chamber/join.html" />
+
+    <title>Join the Lubumbashi Chamber of Commerce</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/join.js"></script>
+</head>
+
+<body>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="contact-info">
+            <span><i class="fa-solid fa-location-dot"></i> Lubumbashi, Kasapa 1210</span>
+            <span><i class="fa-solid fa-envelope"></i> info@ki-chamber.com</span>
+            <span><i class="fa-solid fa-phone"></i> + (243) 97 12 30 587</span>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="images/logo.svg" alt="Chamber Logo" width="100">
+            <div class="logo-text">
+                <h1>KI-CHAMBER</h1>
+                <p>Powerful Member Management & Growth</p>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Membership</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="#" class="login-btn">Account Login</a>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="join-page">
+        <h2>Become a Member</h2>
+        <p>Fill out the form below to join the Lubumbashi Chamber of Commerce.</p>
+
+        <div class="form-membership-wrapper">
+
+            <!-- ===================== FORM ======================= -->
+            <form action="thankyou.html" method="get" class="join-form">
+
+                <label>
+                    First Name:
+                    <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+
+                <label>
+                    Last Name:
+                    <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+
+                <label>
+                    Organizational Title:
+                    <input type="text" 
+                           name="orgTitle" 
+                           title="Your role in your organization"
+                           autocomplete="organization-title"
+                           pattern="[A-Za-z\s\-]{7,}">
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" 
+                           name="email" 
+                           title="Enter your email address"
+                           autocomplete="email"
+                           placeholder="example@email.com"
+                           required>
+                </label>
+
+                <label>
+                    Mobile Phone:
+                    <input type="tel" 
+                           name="phone" 
+                           title="Enter your mobile phone number"
+                           autocomplete="tel"
+                           required>
+                </label>
+
+                <label>
+                    Organization Name:
+                    <input type="text" 
+                           name="organization" 
+                           title="Enter your business or organization name"
+                           autocomplete="organization"
+                           required>
+                </label>
+
+                <label>
+                    Membership Level:
+                    <select name="membership" required title="Choose membership level">
+                        <option value="">Select a level</option>
+                        <option value="np">NP Membership (Non-profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business Description:
+                    <textarea name="description" rows="4" title="Describe your business"></textarea>
+                </label>
+
+                <!-- Hidden timestamp -->
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Submit Application" class="submit-btn">
+            </form>
+
+            <!-- ===================== MEMBERSHIP CARDS ======================= -->
+            <div class="membership-cards">
+
+                <div class="card fade-in">
+                    <h3>NP Membership</h3>
+                    <p>No fee — for non-profit organizations.</p>
+                    <a href="#" data-modal="np-modal">View Benefits</a>
+                </div>
+
+                <div class="card fade-in delay-1">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic access with growth tools.</p>
+                    <a href="#" data-modal="bronze-modal">View Benefits</a>
+                </div>
+
+                <div class="card fade-in delay-2">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced visibility & training.</p>
+                    <a href="#" data-modal="silver-modal">View Benefits</a>
+                </div>
+
+                <div class="card fade-in delay-3">
+                    <h3>Gold Membership</h3>
+                    <p>Premium promotions & events.</p>
+                    <a href="#" data-modal="gold-modal">View Benefits</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ===================== MODALS ======================= -->
+        <dialog id="np-modal">
+            <h3>NP Membership Benefits</h3>
+            <ul>
+                <li>No membership fee</li>
+                <li>Basic directory listing</li>
+                <li>Access to non-profit events</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h3>Bronze Membership Benefits</h3>
+            <ul>
+                <li>Directory listing</li>
+                <li>Small event discounts</li>
+                <li>Business seminars</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h3>Silver Membership Benefits</h3>
+            <ul>
+                <li>Home page spotlight</li>
+                <li>Training workshops</li>
+                <li>Medium event discounts</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h3>Gold Membership Benefits</h3>
+            <ul>
+                <li>Premium spotlight & ads</li>
+                <li>Full event discounts</li>
+                <li>Exclusive business retreats</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 KI-CHAMBER. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

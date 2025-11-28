@@ -393,6 +393,194 @@ body {
     background-color: #ffd700;
 }
 
+
+/*------------Join Section---------------*/
+
+/* CARD ANIMATION */
+.card {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.7s ease-out;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------------- JOIN PAGE ---------------- */
+
+.join-page {
+    padding: 40px 40px 80px;
+    background-color: #fafafa;
+}
+
+.join-page h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.join-page p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* FORM + CARDS LAYOUT */
+.form-membership-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* ---------------- FORM STYLING ---------------- */
+
+.join-form {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.join-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.join-form input,
+.join-form textarea,
+.join-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 6px;
+    font-family: var(--font-family);
+}
+
+.join-form input:focus,
+.join-form textarea:focus,
+.join-form select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #1c5f78;
+}
+
+/* ---------------- MEMBERSHIP CARDS ---------------- */
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.membership-cards .card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.membership-cards .card:hover {
+    transform: translateY(-5px);
+}
+
+.membership-cards h3 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.membership-cards p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.membership-cards a {
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.membership-cards a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------- MODALS ---------------- */
+
+dialog {
+    padding: 20px 25px;
+    border: none;
+    border-radius: 12px;
+    max-width: 400px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    font-family: var(--font-family);
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,0.5);
+}
+
+dialog h3 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+dialog ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.close-modal {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.close-modal:hover {
+    background: #e0b72c;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 900px) {
+    .form-membership-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+
 /* ---------- RESPONSIVE HERO AND GRID ---------- */
 @media (max-width: 768px) {
     .hero {
