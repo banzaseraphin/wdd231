@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Website Project Plan</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 900px;
+        }
+        h1, h2, h3 {
+            color: #c0392b;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        code {
+            background: #eee;
+            padding: 4px 6px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Project Plan — "ConnectKi Dating Website"</h1>
+        <p>This document outlines the complete plan and the CSS layout system that will be used to build the dating website.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>1. Website Topic & Purpose</h2>
+            <p><strong>Topic:</strong> A modern dating website where users browse profiles and submit their own.</p>
+            <p><strong>Core purposes:</strong></p>
+            <ul>
+                <li>Dynamic profiles fetched from JSON.</li>
+                <li>Modal dialog with full user details.</li>
+                <li>Profile submission form.</li>
+                <li>LocalStorage implementation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Page Structure (3 Required Pages)</h2>
+
+            <h3>PAGE 1 — Home (index.html)</h3>
+            <ul>
+                <li>Hero banner with title and description.</li>
+                <li>Featured profiles preview (3 cards).</li>
+                <li>Button linking to full profiles page.</li>
+                <li>SEO meta tags + favicon.</li>
+            </ul>
+
+            <h3>PAGE 2 — Profiles (profiles.html)</h3>
+            <ul>
+                <li>Dynamic grid of 15+ profiles.</li>
+                <li>Four data fields per profile.</li>
+                <li>Modal dialog with full information.</li>
+                <li>LocalStorage (theme preference or favorites).</li>
+            </ul>
+
+            <h3>PAGE 3 — About / Join Us (about.html)</h3>
+            <ul>
+                <li>Overview of how the site works.</li>
+                <li>HTML form with action to form-action.html.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Extra Pages (Not part of 3 required pages)</h2>
+            <ul>
+                <li><strong>form-action.html</strong>: Displays submitted form data.</li>
+                <li><strong>attributions.html</strong>: Lists external credits.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. CSS Layout Plan (Very Important)</h2>
+
+            <p>This describes the exact layout system used in your final website.</p>
+
+            <h3>4.1 Color Palette</h3>
+            <ul>
+                <li>Main color: <code>#c0392b</code> (romantic red)</li>
+                <li>Dark Text: <code>#2c3e50</code></li>
+                <li>Soft Background: <code>#f8f8f8</code></li>
+                <li>Card Background: <code>#ffffff</code></li>
+                <li>Button Hover Color: <code>#e74c3c</code></li>
+            </ul>
+
+            <h3>4.2 Layout System</h3>
+            <p>The website will use a combination of <strong>flexbox</strong> and <strong>CSS grid</strong> layouts:</p>
+            <ul>
+                <li>Header navigation: Flexbox (horizontal for desktop, vertical for mobile).</li>
+                <li>Profile cards: CSS Grid (responsive).</li>
+                <li>Modal: Fixed overlay with centered content.</li>
+                <li>Form layout: Flex-column with spacing.</li>
+            </ul>
+
+            <h3>4.3 Responsive Breakpoints</h3>
+            <pre>
+/* Mobile-first default */
+@media (min-width: 600px) {
+    /* Tablets */
+}
+
+@media (min-width: 900px) {
+    /* Desktop */
+}
+            </pre>
+
+            <h3>4.4 Header & Navigation CSS Plan</h3>
+            <pre>
+header {
+    background: #fff;
+    padding: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: none; /* Mobile hidden */
+    flex-direction: column;
+}
+
+.hamburger {
+    display: block;
+}
+
+@media (min-width: 900px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+            </pre>
+
+            <h3>4.5 Hero Section Layout</h3>
+            <pre>
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fceaea;
+}
+            </pre>
+
+            <h3>4.6 Profile Cards Grid Layout</h3>
+            <pre>
+.profiles-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 600px) {
+    .profiles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .profiles-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+            </pre>
+
+            <h3>4.7 Modal Layout</h3>
+            <pre>
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: none; /* hidden by default */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+}
+            </pre>
+
+            <h3>4.8 Form Layout</h3>
+            <pre>
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+            </pre>
+
+        </section>
+
+        <section>
+            <h2>5. JavaScript Structure</h2>
+            <ul>
+                <li><strong>fetchProfiles.js</strong> — loads JSON data</li>
+                <li><strong>modal.js</strong> — controls modal</li>
+                <li><strong>storage.js</strong> — manages localStorage (theme)</li>
+                <li><strong>nav.js</strong> — handles hamburger menu</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Video Demonstration Requirements</h2>
+            <ul>
+                <li>Show JSON fetch</li>
+                <li>Show try/catch</li>
+                <li>Show dynamic profiles</li>
+                <li>Show modal opening</li>
+                <li>Show localStorage feature</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>
