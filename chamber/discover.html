@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Banza Kiongo Seraphin">
+    <meta name="description" content="Discover Lubumbashi's attractions, landmarks, and events.">
+
+    <meta property="og:title" content="Lubumbashi Chamber of Commerce - Discover" />
+    <meta property="og:description" content="Explore Lubumbashi's top attractions, businesses, and member highlights." />
+    <meta property="og:image" content="images/hero.jpg" />
+    <meta property="og:url" content="https://banzaseraphin.github.io/wdd231/chamber/discover.html" />
+
+    <title>Lubumbashi Chamber of Commerce - Discover</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Use type="module" so imports work -->
+    <script type="module" src="./scripts/discover.js" defer></script>
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="contact-info">
+            <span><i class="fa-solid fa-location-dot"></i> Lubumbashi, Kasapa 1210</span>
+            <span><i class="fa-solid fa-envelope"></i> info@ki-chamber.com</span>
+            <span><i class="fa-solid fa-phone"></i> +243 97 12 30 587</span>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="images/logo.svg" alt="Chamber Logo" width="100">
+            <div class="logo-text">
+                <h1>KI-CHAMBER</h1>
+                <p>Powerful Member Management & Growth</p>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Membership</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="#" class="login-btn">Account Login</a>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="discover-container">
+        <section id="visitor-message" class="visitor-message"></section>
+        <h2 class="page-title">Discover Lubumbashi</h2>
+        <div class="discover-grid" id="discover-cards"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-section">
+                <h2>About Us</h2>
+                <p>The KI-Chamber supports businesses, provides resources, and boosts economic development in Lubumbashi.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Lubumbashi, Kasapa 1210</p>
+                <p><i class="fa-solid fa-envelope"></i> info@ki-chamber.com</p>
+                <p><i class="fa-solid fa-phone"></i> +243 97 12 30 587</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p id="footer-info">&copy; 2025 KI-CHAMBER. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
