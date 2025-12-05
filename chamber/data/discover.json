@@ -1,4 +1,4 @@
-export const places = [
+[
     {
         "id": "item1",
         "name": "Lubumbashi Zoo",
@@ -55,4 +55,4 @@ export const places = [
         "description": "A historic landmark representing the city’s architectural heritage.",
         "image": "images/discover/cathedral.jpg"
     }
-];
+]
