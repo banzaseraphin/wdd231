@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Site Plan – Ki-Tribes</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+<style>
+    :root {
+        --primary-color: #1E3D59;    
+        --secondary-color: #F2A154;  
+        --background-color: #F5F0E3;
+        --text-color: #333333;
+        --font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        margin: 40px;
+        font-family: var(--font-family);
+        background: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+        color: var(--primary-color);
+    }
+
+    .section {
+        background: white;
+        padding: 25px;
+        margin-bottom: 25px;
+        border-radius: 14px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    pre {
+        background: #ECECEC;
+        padding: 12px;
+        border-radius: 10px;
+        overflow-x: auto;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+<h1>📘 SITE PLAN DOCUMENT</h1>
+<h2><strong>Ki-Tribes – Tribes & Languages of the DRC</strong></h2>
+
+<!-- SITE NAME -->
+<div class="section">
+    <h2>1. Site Name</h2>
+    <p><strong>Ki-Tribes</strong></p>
+    <p><strong>Reason:</strong> The name “Ki-Tribes” represents Congolese cultural identity.  
+    The prefix “Ki” is commonly found in many Bantu language names (Kiswahili, Kikongo, Kiyombe, etc.),  
+    symbolizing culture and heritage.  
+    It aligns perfectly with a platform dedicated to tribes and languages in the Democratic Republic of Congo.</p>
+
+    <p><strong>Optional Domain Availability:</strong> ki-tribes.org (*not required for class, included for reference*)</p>
+</div>
+
+<!-- SITE PURPOSE -->
+<div class="section">
+    <h2>2. Site Purpose</h2>
+    <p>
+        The purpose of Ki-Tribes is to document, preserve, and present educational information about the tribes and languages of the DRC.
+        The site will include historical background, locations, cultural customs, and linguistic details.
+        It serves as a resource for students, researchers, tourists, and anyone interested in learning more
+        about the cultural diversity of the Congo.
+    </p>
+</div>
+
+<!-- SCENARIOS -->
+<div class="section">
+    <h2>3. Scenarios</h2>
+    <ul>
+        <li><strong>“Which tribes live in the Kasai, Katanga, or Équateur regions?”</strong></li>
+        <li><strong>“What are the four main national languages of the DRC and where are they spoken?”</strong></li>
+        <li><strong>“Where can I learn about the traditions and history of the Luba, Kongo, Mangbetu, or Lunda tribes?”</strong></li>
+    </ul>
+</div>
+
+<!-- COLOR SCHEME -->
+<div class="section">
+    <h2>4. Color Scheme</h2>
+    <p>These colors are being used consistently in this document and will be used on the final website:</p>
+
+    <ul>
+        <li><strong>Primary Color (#1E3D59):</strong> Main headings, navigation titles.</li>
+        <li><strong>Secondary Color (#F2A154):</strong> Highlights, buttons, accents.</li>
+        <li><strong>Background (#F5F0E3):</strong> Warm, cultural background feel.</li>
+        <li><strong>Text Color (#333333):</strong> Paragraphs, general reading content.</li>
+    </ul>
+</div>
+
+<!-- TYPOGRAPHY -->
+<div class="section">
+    <h2>5. Typography</h2>
+
+    <p><strong>Main Font:</strong> Poppins</p>
+
+    <ul>
+        <li><strong>Headings:</strong> Poppins Semi-Bold (600–700 weight)</li>
+        <li><strong>Body Text:</strong> Poppins Regular (300–400 weight)</li>
+        <li><strong>Navigation:</strong> Poppins 600 weight for clarity</li>
+    </ul>
+</div>
+
+<!-- WIREFRAMES -->
+<div class="section">
+    <h2>6. Wireframe</h2>
+
+    <h3>Mobile View – Home Page</h3>
+    <pre>
+ -------------------------------------
+ |              HEADER               |
+ |        (Logo + Menu Icon)         |
+ -------------------------------------
+ |           HERO SECTION            |
+ |   "Explore DRC Tribes & Languages"|
+ -------------------------------------
+ |        BUTTON: View Tribes        |
+ -------------------------------------
+ |      BUTTON: View Languages       |
+ -------------------------------------
+ |        SHORT INTRO PARAGRAPH      |
+ -------------------------------------
+ |              FOOTER               |
+ -------------------------------------
+    </pre>
+
+    <h3>Desktop View – Home Page</h3>
+    <pre>
+ -------------------------------------------------------------
+ |                           HEADER                          |
+ |             (Logo - Ki-Tribes | Navigation Menu)          |
+ -------------------------------------------------------------
+ |                      HERO BANNER                          |
+ |        Large image with title + description + button      |
+ -------------------------------------------------------------
+ |                       FEATURE CARDS                        |
+ |      [Tribes Card]   [Languages Card]   [Map Card]        |
+ -------------------------------------------------------------
+ |                           INTRO TEXT                       |
+ -------------------------------------------------------------
+ |                           FOOTER                           |
+ -------------------------------------------------------------
+    </pre>
+</div>
+
+<!-- SITE STRUCTURE -->
+<div class="section">
+    <h2>7. Site Structure</h2>
+
+    <ul>
+        <li><strong>index.html</strong> – Home page</li>
+        <li><strong>tribes.html</strong> – List and details of DRC Tribes</li>
+        <li><strong>languages.html</strong> – National and regional languages</li>
+        <li><strong>styles.css</strong> – Main website styling</li>
+        <li><strong>scripts.js</strong> – JavaScript interactions</li>
+    </ul>
+</div>
+
+<!-- JAVASCRIPT -->
+<div class="section">
+    <h2>8. JavaScript Functionality Plan</h2>
+
+    <p>JavaScript will be used on the Ki-Tribes site to improve user interaction and navigation.</p>
+
+    <h3>1. Mobile Navigation Toggle</h3>
+    <p>Opens/closes the mobile menu when the user taps the menu icon.</p>
+    <pre>
+function toggleMenu() {
+    const nav = document.getElementById("mobile-nav");
+    nav.classList.toggle("open");
+}
+    </pre>
+
+    <h3>2. Tribe Search Filter</h3>
+    <p>Allows users to search tribes by name and filter results dynamically.</p>
+    <pre>
+function searchTribes() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const cards = document.getElementsByClassName("tribe-card");
+
+    for (let i = 0; i < cards.length; i++) {
+        let name = cards[i].innerText.toLowerCase();
+        cards[i].style.display = name.includes(input) ? "" : "none";
+    }
+}
+    </pre>
+
+    <h3>3. Smooth Scrolling</h3>
+    <p>Gives the site a smooth scroll effect when navigating between sections.</p>
+    <pre>
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+    </pre>
+
+    <h3>4. Optional Card Hover Enhancement</h3>
+    <p>May add animated effects on tribe and language cards.</p>
+
+    <p><strong>JavaScript File:</strong> scripts.js</p>
+</div>
+
+<footer>
+    <a href="https://www.loom.com/share/259c14c9f8ea4e20b46903d1cbb6488a">Project Demo Video</a>    
+</footer>
+
+</body>
+</html>
