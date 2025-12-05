@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tribes – Ki-Tribes</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="logo-container">
+        <img src="./images/logo.svg" alt="Ki-Tribes Logo" class="site-logo">
+        <span class="site-title">Ki-Tribes</span>
+    </div>
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="tribes.html" class="active">Tribes</a>
+        <a href="languages.html">Languages</a>
+    </nav>
+    <div class="language-selector">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('fr')">FR</button>
+        <button onclick="setLanguage('sw')">SW</button>
+    </div>
+    <div class="menu-icon" id="mobile-menu">☰</div>
+</header>
+
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="tribes.html" class="active">Tribes</a>
+    <a href="languages.html">Languages</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero tribes-hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+        <h1>Discover the Tribes of the DRC</h1>
+        <p>Learn about the cultures, history, and traditions of the diverse tribes of the Democratic Republic of Congo.</p>
+    </div>
+</section>
+
+<!-- SEARCH BAR -->
+<section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search tribes..." onkeyup="searchTribes()">
+</section>
+
+<!-- TRIBES GRID -->
+<section class="tribes-container" id="tribeList">
+    <div class="tribe-card">
+        <h3>Luba</h3>
+        <p><strong>Region:</strong> Kasai</p>
+        <p><strong>Notable Info:</strong> Known for rich traditions and artistic crafts.</p>
+    </div>
+    <div class="tribe-card">
+        <h3>Kongo</h3>
+        <p><strong>Region:</strong> Kongo Central</p>
+        <p><strong>Notable Info:</strong> Famous for historical kingdoms and cultural heritage.</p>
+    </div>
+    <div class="tribe-card">
+        <h3>Mangbetu</h3>
+        <p><strong>Region:</strong> Orientale</p>
+        <p><strong>Notable Info:</strong> Renowned for elongated head art and architecture.</p>
+    </div>
+    <div class="tribe-card">
+        <h3>Lunda</h3>
+        <p><strong>Region:</strong> Katanga</p>
+        <p><strong>Notable Info:</strong> Known for powerful kingdoms and cultural rituals.</p>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <p>© 2025 Ki-Tribes | Cultural Heritage of the DRC</p>
+</footer>
+
+<script src="./scripts/translation.js"></script>
+<script src="./scripts/script.js"></script>
+</body>
+</html>

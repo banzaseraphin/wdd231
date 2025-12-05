@@ -3,203 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Site Plan – Tribes & Languages of the DRC</title>
-
-<style>
-    body {
-        font-family: 'Poppins', sans-serif;
-        margin: 40px;
-        background: #f4f4f4;
-        color: #333;
-        line-height: 1.6;
-    }
-    h1, h2, h3 {
-        color: #2E4053;
-    }
-    .section {
-        background: white;
-        padding: 25px;
-        border-radius: 12px;
-        margin-bottom: 30px;
-        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    }
-    pre {
-        background: #eeeeee;
-        padding: 10px;
-        border-radius: 8px;
-        overflow-x: auto;
-    }
-</style>
-
+<title>Ki-Tribes</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 
-<h1>📘 WEBSITE PROJECT PLAN</h1>
-<h2>Tribes & Languages of the Democratic Republic of Congo</h2>
+<!-- HEADER -->
+<header class="main-header">
+    <div class="logo-container">
+        <img src="./images/logo.svg" alt="Ki-Tribes Logo" class="site-logo">
+        <span class="site-title">Ki-Tribes</span>
+    </div>
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="tribes.html">Tribes</a>
+        <a href="languages.html">Languages</a>
+    </nav>
+    <div class="language-selector">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('fr')">FR</button>
+        <button onclick="setLanguage('sw')">SW</button>
+    </div>
+    <div class="menu-icon" id="mobile-menu">☰</div>
+</header>
 
-<div class="section">
-    <h2>1. Website Name</h2>
-    <p><strong>DRC Heritage Hub</strong></p>
-    <p><em>Reason:</em> The name reflects the cultural richness, tribes, and languages that make up Congo’s identity.</p>
-</div>
+<!-- MOBILE NAV -->
+<nav class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="tribes.html">Tribes</a>
+    <a href="languages.html">Languages</a>
+</nav>
 
-<div class="section">
-    <h2>2. Purpose of the Website</h2>
-    <p>This website aims to educate users about the diverse tribes and languages found in the Democratic Republic of Congo.  
-    It provides historical background, cultural insights, maps, and linguistic information.</p>
-</div>
+<!-- HERO -->
+<section class="hero home-hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+        <h1>Explore the Tribes & Languages of the DRC</h1>
+        <p>Discover rich cultures, traditions, and languages that form the heart of the Democratic Republic of Congo.</p>
+        <div class="hero-buttons">
+            <a href="tribes.html" class="btn-primary">View Tribes</a>
+            <a href="languages.html" class="btn-primary">View Languages</a>
+        </div>
+    </div>
+</section>
 
-<div class="section">
-    <h2>3. Target Audience</h2>
-    <ul>
-        <li>Students</li>
-        <li>Researchers</li>
-        <li>Tourists</li>
-        <li>Congo citizens wanting to learn more about their heritage</li>
-    </ul>
-</div>
+<!-- INTRO SECTION -->
+<section class="intro">
+    <h2>Welcome to Ki-Tribes</h2>
+    <p>The Democratic Republic of Congo is home to over 200 tribes and many diverse languages. Ki-Tribes is a project dedicated to documenting and presenting this cultural wealth in a clear and educational way.</p>
+</section>
 
-<div class="section">
-    <h2>4. Website Pages</h2>
+<footer class="main-footer">
+    <p>© 2025 Ki-Tribes | Cultural Heritage of the DRC</p>
+</footer>
 
-    <h3>1. Home Page</h3>
-    <p>Brief introduction, hero image, overview of tribes & languages.</p>
-
-    <h3>2. Tribes Page</h3>
-    <p>List of DRC tribes (e.g., Luba, Kongo, Mongo, Teke, Tetela, Lunda, Chokwe).  
-    Each tribe will include history, culture, location, and traditions.</p>
-
-    <h3>3. Languages Page</h3>
-    <p>Explains the 4 national languages (Swahili, Lingala, Kikongo, Tshiluba) and major local languages.</p>
-
-</div>
-
-<div class="section">
-    <h2>5. Wireframes (Rough Layouts)</h2>
-
-    <h3>Home Page Layout</h3>
-    <pre>
- --------------------------------------------------
- |                 HEADER / NAV                   |
- --------------------------------------------------
- |                 HERO IMAGE                     |
- |      "Discover Congo's Tribes & Languages"     |
- --------------------------------------------------
- |     3 CARDS: Tribes | Languages | Map          |
- --------------------------------------------------
- |                 FOOTER                         |
- --------------------------------------------------
-    </pre>
-
-    <h3>Tribes Page Layout</h3>
-    <pre>
- --------------------------------------------------
- |                   HEADER                       |
- --------------------------------------------------
- | SEARCH BAR                                     |
- --------------------------------------------------
- | TRIBE LIST (Cards: Image + Name)               |
- --------------------------------------------------
- | CLICK → Detailed Tribe Page                    |
- --------------------------------------------------
-    </pre>
-
-    <h3>Languages Page Layout</h3>
-    <pre>
- --------------------------------------------------
- |                   HEADER                       |
- --------------------------------------------------
- | FOUR NATIONAL LANGUAGES (Grid 2x2)             |
- --------------------------------------------------
- | LOCAL LANGUAGES – List                         |
- --------------------------------------------------
-    </pre>
-</div>
-
-<div class="section">
-    <h2>6. Color Palette</h2>
-    <ul>
-        <li><strong>#1E3D59</strong> – Navy blue (main headings)</li>
-        <li><strong>#F5F0E3</strong> – Light beige (background)</li>
-        <li><strong>#F2A154</strong> – Orange (buttons / accents)</li>
-        <li><strong>#4CAF50</strong> – Green (highlights)</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>7. Typography</h2>
-    <p><strong>Main Font:</strong> Poppins</p>
-    <p><strong>Font Weights:</strong> 300, 400, 600, 700</p>
-</div>
-
-<div class="section">
-    <h2>8. Content Outline</h2>
-
-    <h3>Home</h3>
-    <ul>
-        <li>Introduction</li>
-        <li>Quick overview of the cultural diversity</li>
-        <li>Links to tribes & languages pages</li>
-    </ul>
-
-    <h3>Tribes Page</h3>
-    <ul>
-        <li>Luba</li>
-        <li>Kongo</li>
-        <li>Mongo</li>
-        <li>Tetela</li>
-        <li>Teke</li>
-        <li>Lunda</li>
-        <li>Chokwe</li>
-        <li>And others…</li>
-    </ul>
-
-    <h3>Languages Page</h3>
-    <ul>
-        <li>Swahili</li>
-        <li>Lingala</li>
-        <li>Kikongo</li>
-        <li>Tshiluba</li>
-        <li>Regional languages</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>9. Navigation Plan</h2>
-    <ul>
-        <li>Home</li>
-        <li>Tribes</li>
-        <li>Languages</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>10. CSS Layout Plan</h2>
-    <ul>
-        <li>Grid layout for tribes and languages</li>
-        <li>Hero section with full-width background image</li>
-        <li>Reusable cards (shadow, radius, hover scale)</li>
-        <li>Consistent spacing (padding 20–40px)</li>
-        <li>Responsive layout for mobile (single column)</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>11. JavaScript Features</h2>
-    <ul>
-        <li>Search bar filtering tribes</li>
-        <li>Smooth scroll</li>
-        <li>Mobile menu toggle</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>12. Media</h2>
-    <ul>
-        <li>Images of tribes, people, and regions</li>
-        <li>Maps showing language distribution</li>
-    </ul>
-</div>
-
+<script src="./scripts/translation.js"></script>
+<script src="./scripts/script.js"></script>
 </body>
 </html>
