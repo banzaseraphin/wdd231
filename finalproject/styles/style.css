@@ -30,7 +30,11 @@
     z-index: 9999;
     flex-direction: column;
     opacity: 1;
-    transition: opacity 5s ease;
+    transition: opacity 10s ease;
+    -webkit-transition: opacity 10s ease;
+    -moz-transition: opacity 10s ease;
+    -ms-transition: opacity 10s ease;
+    -o-transition: opacity 10s ease;
 }
 
 .preloader-logo {
