@@ -99,10 +99,11 @@ body {
 /* ---------- HERO ---------- */
 .hero {
     position: relative;
-    height: 400px;
+    height: 1110px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('../images/hero.svg');
     color: white;
     text-align: center;
     background-size: cover;
